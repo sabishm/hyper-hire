@@ -29,7 +29,7 @@ export default function WelcomeScreen() {
         ref={video}
         style={styles.video}
         source={videoSource}
-        useNativeControls
+        useNativeControls={false}
         resizeMode={ResizeMode.COVER}
         isLooping
         onPlaybackStatusUpdate={status => setStatus(status)}

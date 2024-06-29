@@ -125,7 +125,9 @@ const SignupScreen = () => {
                         errors.agree = "You must agree the terms and conditions for complete the signup!";
                     }
 
-                    return errors;
+                    if(haveError) {
+                        return errors;
+                    } 
                 }}
             >
                 {({ handleChange, handleBlur, handleSubmit, values, errors }) => (
